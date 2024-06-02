@@ -7,7 +7,7 @@ int main()
 {
 
 	Connection conn;
-	conn.connect("127.0.0.1", 3306, "root", "123456", "chat");
+	conn.connect("127.0.0.1", 3306, "root", "your_password", "chat");
 
 	clock_t begin = clock();
 
@@ -24,7 +24,7 @@ int main()
 			char sql[1024] = { 0 };
 			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
 				"zhang san", 20, "male");
-			conn.connect("127.0.0.1", 3306, "root", "123456", "chat");
+			conn.connect("127.0.0.1", 3306, "root", "your_password", "chat");
 			conn.update(sql);
 		}
 		});
@@ -41,7 +41,7 @@ int main()
 			char sql[1024] = { 0 };
 			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
 				"zhang san", 20, "male");
-			conn.connect("127.0.0.1", 3306, "root", "123456", "chat");
+			conn.connect("127.0.0.1", 3306, "root", "your_password", "chat");
 			conn.update(sql);
 		}
 		});
@@ -58,7 +58,7 @@ int main()
 			char sql[1024] = { 0 };
 			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
 				"zhang san", 20, "male");
-			conn.connect("127.0.0.1", 3306, "root", "123456", "chat");
+			conn.connect("127.0.0.1", 3306, "root", "your_password", "chat");
 			conn.update(sql);
 		}
 		});
@@ -75,7 +75,7 @@ int main()
 			char sql[1024] = { 0 };
 			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
 				"zhang san", 20, "male");
-			conn.connect("127.0.0.1", 3306, "root", "123456", "chat");
+			conn.connect("127.0.0.1", 3306, "root", "your_password", "chat");
 			conn.update(sql);
 		}
 		});
@@ -97,7 +97,7 @@ int main()
 		char sql[1024] = { 0 };
 		sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
 			"zhang san", 20, "male");
-		conn.connect("127.0.0.1", 3306, "root", "fjt170901", "chat");
+		conn.connect("127.0.0.1", 3306, "root", "your_password", "chat");
 		conn.update(sql);*/
 		
 		shared_ptr<Connection> sp = cp->getConnection();
